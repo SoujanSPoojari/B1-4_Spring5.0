@@ -9,9 +9,9 @@ public class Exam
 	{
 		//injecting the value for dependency name(normal way) 
 	@SuppressWarnings("resource")
-	ApplicationContext c=new ClassPathXmlApplicationContext("beans.xml");
-	Students s1=c.getBean("s1",Students.class);
-	s1.display();
+	ApplicationContext a=new ClassPathXmlApplicationContext("beans.xml");
+	Students s2=a.getBean("s2",Students.class);
+	s2.display();
 	
 	/*Student s2=c.getBean("s2",Student.class);
 	s2.display();*/
