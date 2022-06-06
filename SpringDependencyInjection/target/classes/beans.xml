@@ -3,14 +3,15 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-<bean id="s2" class="com.di.Students">
-	<constructor-arg name="studentName" value="Soujan Poojari"/>
-	<constructor-arg name="id" value="153"/>
-
-
-
-
-
+<bean id="s2" class="com.di.Student2">
+	<property name ="c">
+	<bean class="com.di2.mathCheat()"/>
+	</property>
+</bean>
+<bean id="s3" class="com.di.Student2">
+<property name ="c">
+	<bean class="com.di2.Another_Student()"/>
+	</property>
 
 </bean>
 </beans>
