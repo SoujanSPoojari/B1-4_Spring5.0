@@ -1,6 +1,6 @@
 package com.di2;
 
-public class Student2 {
+public class Student1 {
 		
 		//Dependency in objects
 		Cheat c;

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
-    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-
-<bean id="s2" class="com.di.Student2">
-	<property name ="c">
-	<bean class="com.di2.mathCheat()"/>
+<bean id="objectMathCheat" class="com.Cheat"/>
+<bean id="s1" class="com.Student1">
+	<property name="c"  ref="objectMathCheat">
+		
 	</property>
 </bean>
-<bean id="s3" class="com.di.Student2">
-<property name ="c">
-	<bean class="com.di2.Another_Student()"/>
+<bean id="s2" class="com.AnotherStudent">
+	<property name="c" ref="objectMathCheat">
+		
 	</property>
-
 </bean>
+	
 </beans>
