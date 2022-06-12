@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import com.example.entities.Student;
+import com.example.springstarterproject1.entities.Student;
 
 @SpringBootApplication
 public class SprinStarterProject1Application {

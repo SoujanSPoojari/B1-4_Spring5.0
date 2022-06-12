@@ -1,4 +1,4 @@
-package com.example.entities;
+package com.example.springstarterproject1.entities;
 
 import org.springframework.stereotype.Component;
 
@@ -25,6 +25,6 @@ private String name;
 	}
 	public void display()
 	{
-		System.out.println("B1-4 Students");
+		System.out.println("Hello Students");
 	}
 }
